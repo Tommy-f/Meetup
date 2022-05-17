@@ -1,0 +1,153 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  margin-bottom: 20px;
+}
+
+.attending {
+  position: absolute;
+  left: 100rem;
+  width: 200px;
+  transform: rotate(90deg);
+}
+
+.card {
+  width: 300px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 150px 50px 150px 100px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-areas:
+    "img img img"
+    "head head head"
+    "main  main main"
+    "foot  foot foot";
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+
+.img {
+  grid-area: img;
+}
+
+.status {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #90ee90;
+}
+
+.status p {
+  text-transform: uppercase;
+}
+
+.img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.header {
+  font-size: 0.8rem;
+  padding-left: 30px;
+  grid-area: head;
+}
+
+.main {
+  grid-area: main;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.footer {
+  grid-area: foot;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "date ."
+    "attend comment";
+  background-color: #fff;
+  border-radius: 0 0 5px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.date {
+  grid-area: date;
+}
+
+.attend {
+  grid-area: attend;
+}
+
+.comment {
+  grid-area: comment;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {}
+
+
+@media (min-width: 992px) {
+
+  .card {
+    width: 850px;
+    display: grid;
+    grid-template-columns: 250px 600px 50px;
+    grid-template-rows: 50px 150px 100px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas: "img head status"
+      "img  main status"
+      "img  foot .";
+    background-color: #fff;
+    border-radius: 5px;
+  }
+
+  .img img {
+    border-radius: 5px 0 0px 5px;
+  }
+
+  .status {
+    position: relative;
+    grid-area: status;
+    border-radius: 0 5px 5px 0;
+  }
+
+  .status p {
+    transform: rotate(90deg);
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "date attend comment";
+  }
+
+  .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

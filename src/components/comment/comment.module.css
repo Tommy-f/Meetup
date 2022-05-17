@@ -1,0 +1,28 @@
+.comment {
+  width: 500px;
+}
+
+.comment-card {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+}
+
+.name {
+  grid-area: name;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: #2b7bb9;
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(126, 204, 126);
+  width: 45px;
+  height: 45px;
+  border-radius: 10%;
+  margin: 0 15px;
+}

@@ -1,0 +1,39 @@
+.wrapper {
+  margin: auto;
+  width: 850px;
+  min-height: 150px;
+  background-color: #fff;
+}
+
+.form-wrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 2;
+  grid-gap: 0.3rem;
+}
+
+.commentInput {
+  margin-top: 1rem;
+  border-radius: 5px;
+  width: 50rem;
+  height: 4rem;
+  border: 2px solid #dbdfe4;
+}
+
+
+.btn {
+  justify-self: end;
+  width: 10rem;
+  height: 2rem;
+  border: none;
+  background-color: #666666;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  cursor: default;
+}

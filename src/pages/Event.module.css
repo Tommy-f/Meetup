@@ -1,0 +1,55 @@
+
+
+.header {
+  display: grid;
+  margin: 1rem auto ;
+  align-items: center;
+  justify-content: left;
+  height: 80px;
+  width: 850px;
+}
+
+.header button {
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #666666;
+  color: #fff;
+}
+
+.attend-wrapper {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  width: 850px;
+  height: 80px;
+}
+
+.attend-wrapper button {
+  margin-right: 1rem;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 10rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.attend {
+  background-color: #90ee90;
+}
+
+.unattend {
+  background-color: #f65555;
+  color: #fff;
+}
+
+.Meetup {
+  margin-bottom: 0 !important;
+}
